@@ -14,9 +14,10 @@ Group:		Development/Languages/Perl
 Source0:	http://dl.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
 # Source0-md5:	4ee3b09c640d66a66640ec65cd30c36a
 URL:		http://gtk2-perl.sourceforge.net/
+BuildRequires:	libstdc++-devel
 BuildRequires:	perl-ExtUtils-Depends >= 0.200
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03
-#BuildRequires:	perl-Mozilla-DOM >= 0.01
+BuildRequires:	perl-Mozilla-DOM >= 0.01
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Glib >= 1.060
 BuildRequires:	perl-Gtk2 >= 1.081
@@ -25,9 +26,11 @@ BuildRequires:	xulrunner-devel >= 1.8
 Requires:	libgtkhtml >= 2.0.0
 Requires:	perl-Glib >= 1.060
 Requires:	perl-Gtk2 >= 1.081
-#Requires:	perl-Mozilla-DOM >= 0.01
-Requires:	xulrunner-libs >= 1.8
+Requires:	perl-Mozilla-DOM >= 0.01
+%requires_eq	xulrunner-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreq	libgtkembedmoz.so libxpcom.so
 
 %description
 This module allows you to use the Mozilla embedding widget from Perl.
