@@ -7,12 +7,12 @@
 Summary:	Gtk2::MozEmbed - Mozilla embedding in Perl
 Summary(pl.UTF-8):	Gtk2::MozEmbed - osadzanie Mozilli w Perlu
 Name:		perl-Gtk2-MozEmbed
-Version:	0.06
+Version:	0.07
 Release:	1
-License:	LGPL
+License:	LGPL v2.1+
 Group:		Development/Languages/Perl
 Source0:	http://dl.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
-# Source0-md5:	4ee3b09c640d66a66640ec65cd30c36a
+# Source0-md5:	7972456ad8ce8294aa1ef5de1d503716
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	libstdc++-devel
 BuildRequires:	perl-ExtUtils-Depends >= 0.200
