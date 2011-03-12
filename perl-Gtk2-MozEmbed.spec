@@ -7,24 +7,24 @@
 Summary:	Gtk2::MozEmbed - Mozilla embedding in Perl
 Summary(pl.UTF-8):	Gtk2::MozEmbed - osadzanie Mozilli w Perlu
 Name:		perl-Gtk2-MozEmbed
-Version:	0.07
+Version:	0.08
 Release:	1
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
-Source0:	http://dl.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
-# Source0-md5:	7972456ad8ce8294aa1ef5de1d503716
+Source0:	http://downloads.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
+# Source0-md5:	ddafafa0e2684050a5d8b9f2c15f6dca
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	libstdc++-devel
 BuildRequires:	perl-ExtUtils-Depends >= 0.200
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03
 BuildRequires:	perl-Mozilla-DOM >= 0.01
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-Glib >= 1.060
+BuildRequires:	perl-Glib >= 1.180
 BuildRequires:	perl-Gtk2 >= 1.081
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	xulrunner-devel >= 1.8
 Requires:	libgtkhtml >= 2.0.0
-Requires:	perl-Glib >= 1.060
+Requires:	perl-Glib >= 1.180
 Requires:	perl-Gtk2 >= 1.081
 Requires:	perl-Mozilla-DOM >= 0.01
 %requires_eq	xulrunner-libs
@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/Gtk2/MozEmbed/*.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/Gtk2/MozEmbed/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
