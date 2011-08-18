@@ -7,20 +7,20 @@
 Summary:	Gtk2::MozEmbed - Mozilla embedding in Perl
 Summary(pl.UTF-8):	Gtk2::MozEmbed - osadzanie Mozilli w Perlu
 Name:		perl-Gtk2-MozEmbed
-Version:	0.08
+Version:	0.09
 Release:	1
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
 Source0:	http://downloads.sourceforge.net/gtk2-perl/%{pnam}-%{version}.tar.gz
-# Source0-md5:	ddafafa0e2684050a5d8b9f2c15f6dca
+# Source0-md5:	8c391fbe1ebf23a0af22d5ad3b571f19
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	libstdc++-devel
 BuildRequires:	perl-ExtUtils-Depends >= 0.200
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03
 BuildRequires:	perl-Mozilla-DOM >= 0.01
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-Glib >= 1.180
-BuildRequires:	perl-Gtk2 >= 1.081
+BuildRequires:	perl-Glib-devel >= 1.180
+BuildRequires:	perl-Gtk2-devel >= 1.081
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	xulrunner-devel >= 1.8
 Requires:	libgtkhtml >= 2.0.0
@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog NEWS README
+%doc ChangeLog.pre-git NEWS README
 %{perl_vendorarch}/Gtk2/MozEmbed.pm
 %dir %{perl_vendorarch}/Gtk2/MozEmbed
 %{perl_vendorarch}/Gtk2/MozEmbed/Install
