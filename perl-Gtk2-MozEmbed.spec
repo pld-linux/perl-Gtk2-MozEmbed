@@ -70,6 +70,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/Gtk2/MozEmbed
 %{perl_vendorarch}/Gtk2/MozEmbed/Install
 %dir %{perl_vendorarch}/auto/Gtk2/MozEmbed
-%{perl_vendorarch}/auto/Gtk2/MozEmbed/MozEmbed.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Gtk2/MozEmbed/MozEmbed.so
 %{_mandir}/man3/Gtk2::MozEmbed*.3pm*
