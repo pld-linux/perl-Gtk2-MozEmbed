@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (requires X server)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pnam	Gtk2-MozEmbed
 Summary:	Gtk2::MozEmbed - Mozilla embedding in Perl
 Summary(pl.UTF-8):	Gtk2::MozEmbed - osadzanie Mozilli w Perlu
