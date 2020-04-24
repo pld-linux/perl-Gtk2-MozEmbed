@@ -21,6 +21,7 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Glib-devel >= 1.180
 BuildRequires:	perl-Gtk2-devel >= 1.081
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRequires:	xulrunner-devel >= 1.8
 Requires:	libgtkhtml >= 2.0.0
 Requires:	perl-Glib >= 1.180
